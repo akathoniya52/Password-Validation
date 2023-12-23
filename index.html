@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Validation</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+    <div class="container">
+        <input type="password" id="password" placeholder="my_pa$$word" onInput="onChangeHandler()" />
+        <header>Password must contains</header>
+        <ul>
+            <li id="one-number">At least 1 Number (0...9)</li>
+            <li id="eight-character">At least 8 Character length</li>
+            <li id="one-lower">At least 1 LowerCase letter (a...z)</li>
+            <li id="one-upper">At least 1 UpperCase letter (A...Z)</li>
+            <li id="one-special">At least 1 special symbol (!...$) </li>
+        </ul>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
